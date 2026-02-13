@@ -135,76 +135,67 @@
                 <!-- Left: Simulated Social Feed -->
                 <div class="social-feed-column">
                     <div class="feed-header">
-                        <span class="live-indicator"><span class="pulse"></span> LIVE</span>
+                        <button id="refresh-feed" class="live-indicator"><span class="pulse"></span> 芽室LIVE</button>
                         <span class="feed-title">#AIコミソンフェス updates</span>
                     </div>
-                    <div class="tweet-stack">
-                        <!-- Tweet 1 (Official) -->
-                        <div class="tweet-card">
-                            <div class="tweet-user">
-                                <img src="assets/img/icon_manachuri.jpg" alt="まなちゅり" class="tweet-avatar">
-                                <div class="user-meta">
-                                    <span class="display-name">まなちゅり/AIコミソン運営</span>
-                                    <span class="user-handle">@manachurion</span>
-                                </div>
-                            </div>
-                            <p class="tweet-body">
-                                公式YouTubeチャンネルを立ち上げました！AIコミソンフェスのプレミア公開はこちらで行いますので登録よろしくお願い致します！
-                            </p>
-                            <span class="tweet-time">Feb 11</span>
-                        </div>
-                        <!-- Tweet 2 (Community) -->
-                        <div class="tweet-card">
-                            <div class="tweet-user">
-                                <div class="tweet-avatar-dummy">O</div>
-                                <div class="user-meta">
-                                    <span class="display-name">おさるなもんきち</span>
-                                    <span class="user-handle">@osaruna7741</span>
-                                </div>
-                            </div>
-                            <p class="tweet-body">
-                                真剣に馬鹿をやる、その心意気大好きです。 #芽室町 ってどんなところなんでしょう？ そこから見て行きたいですね。 #AIコミソンフェス
-                            </p>
-                            <span class="tweet-time">Yesterday</span>
-                        </div>
-                        <!-- Tweet 3 (Community) -->
-                        <div class="tweet-card">
-                            <div class="tweet-user">
-                                <div class="tweet-avatar-dummy">R</div>
-                                <div class="user-meta">
-                                    <span class="display-name">REI</span>
-                                    <span class="user-handle">@s_k_r_rei</span>
-                                </div>
-                            </div>
-                            <p class="tweet-body">
-                                当日は朝7時からボランティアをします(大嘘) #AIコミソンフェス 盛り上がってきました！
-                            </p>
-                            <span class="tweet-time">Feb 12</span>
-                        </div>
+                    <div id="tweet-container" class="tweet-stack">
+                        <!-- JS will inject tweets here -->
                     </div>
                     <a href="https://twitter.com/search?q=%23AI%E3%82%B3%E3%83%9F%E3%82%BD%E3%83%B3%E3%83%95%E3%82%A7%E3%82%B9"
                         class="btn-view-more" target="_blank">View more on X</a>
                 </div>
-
-                <!-- Right: SNS Dashboard -->
-                <div class="sns-dashboard-column">
-                    <div class="dashboard-grid">
-                        <a href="https://twitter.com/manachurion" class="dash-card x-card" target="_blank">
-                            <i class="fab fa-x-twitter"></i>
-                            <span class="dash-label">FOLLOW OFFICIAL X</span>
-                        </a>
-                        <a href="https://www.youtube.com/@machiokoshiAIcomicsongFES" class="dash-card youtube-card"
-                            target="_blank">
-                            <i class="fab fa-youtube"></i>
-                            <span class="dash-label">YOUTUBE CHANNEL</span>
-                        </a>
-                        <a href="https://note.com/aicomicsongfes" class="dash-card note-card" target="_blank">
-                            <img src="https://assets.st-note.com/production/static/images/common/logo/logo-note-mark.svg"
-                                alt="note" class="note-icon-small">
-                            <span class="dash-label">OFFICIAL NOTE</span>
-                        </a>
+                <!-- Tweet 2 (Community) -->
+                <div class="tweet-card">
+                    <div class="tweet-user">
+                        <div class="tweet-avatar-dummy">O</div>
+                        <div class="user-meta">
+                            <span class="display-name">おさるなもんきち</span>
+                            <span class="user-handle">@osaruna7741</span>
+                        </div>
                     </div>
+                    <p class="tweet-body">
+                        真剣に馬鹿をやる、その心意気大好きです。 #芽室町 ってどんなところなんでしょう？ そこから見て行きたいですね。 #AIコミソンフェス
+                    </p>
+                    <span class="tweet-time">Yesterday</span>
                 </div>
+                <!-- Tweet 3 (Community) -->
+                <div class="tweet-card">
+                    <div class="tweet-user">
+                        <div class="tweet-avatar-dummy">R</div>
+                        <div class="user-meta">
+                            <span class="display-name">REI</span>
+                            <span class="user-handle">@s_k_r_rei</span>
+                        </div>
+                    </div>
+                    <p class="tweet-body">
+                        当日は朝7時からボランティアをします(大嘘) #AIコミソンフェス 盛り上がってきました！
+                    </p>
+                    <span class="tweet-time">Feb 12</span>
+                </div>
+            </div>
+            <a href="https://twitter.com/search?q=%23AI%E3%82%B3%E3%83%9F%E3%82%BD%E3%83%B3%E3%83%95%E3%82%A7%E3%82%B9"
+                class="btn-view-more" target="_blank">View more on X</a>
+            </div>
+
+            <!-- Right: SNS Dashboard -->
+            <div class="sns-dashboard-column">
+                <div class="dashboard-grid">
+                    <a href="https://twitter.com/manachurion" class="dash-card x-card" target="_blank">
+                        <i class="fab fa-x-twitter"></i>
+                        <span class="dash-label">FOLLOW OFFICIAL X</span>
+                    </a>
+                    <a href="https://www.youtube.com/@machiokoshiAIcomicsongFES" class="dash-card youtube-card"
+                        target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <span class="dash-label">YOUTUBE CHANNEL</span>
+                    </a>
+                    <a href="https://note.com/aicomicsongfes" class="dash-card note-card" target="_blank">
+                        <img src="https://assets.st-note.com/production/static/images/common/logo/logo-note-mark.svg"
+                            alt="note" class="note-icon-small">
+                        <span class="dash-label">OFFICIAL NOTE</span>
+                    </a>
+                </div>
+            </div>
             </div>
         </section>
 
