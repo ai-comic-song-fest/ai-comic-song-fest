@@ -397,17 +397,66 @@ nav a:hover {
 }
 
 /* SNS Section */
-.sns-consolidated {
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    height: 600px;
-    overflow-y: hidden;
-    /* X widget has its own scroll */
+.sns-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.sns-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: var(--midnight);
+}
+
+.sns-btn:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sns-btn .btn-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.sns-btn .btn-handle {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.sns-btn.x-btn:hover {
+    border-color: #000000;
+    color: #000000;
+}
+
+.sns-btn.hashtag-btn:hover {
+    border-color: #1DA1F2;
+    color: #1DA1F2;
+}
+
+.sns-btn.youtube-btn:hover {
+    border-color: #FF0000;
+    color: #FF0000;
+}
+
+.sns-btn.note-btn:hover {
+    border-color: #2CB696;
+    color: #2CB696;
 }
 
 /* Artists */
