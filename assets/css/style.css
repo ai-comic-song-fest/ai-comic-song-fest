@@ -396,6 +396,31 @@ nav a:hover {
     border-color: var(--midnight);
 }
 
+.articles-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn-more-articles {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: rgba(44, 182, 150, 0.1);
+    color: #2cb696;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid rgba(44, 182, 150, 0.3);
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-more-articles:hover {
+    background: #2cb696;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(44, 182, 150, 0.2);
+}
+
 /* SNS Section: Social Wall */
 .social-wall {
     display: grid;
